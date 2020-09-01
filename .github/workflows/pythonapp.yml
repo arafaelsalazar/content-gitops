@@ -24,5 +24,5 @@ jobs:
       run: |
         cd ./python
         docker login --username=asalazarflores --password=${{ secrets.DOCKERPW }}
-        docker image build -t cloud_user/gitops:hellov1.0 .
-        docker push cloud_user/gitops:hellov1.0
+        docker image build -t asalazarflores/gitops:hellov1.0 .
+        docker push asalazarflores/gitops:hellov1.0
